@@ -12,3 +12,11 @@ C:\Users\valentino\source\repos\Seminario1\AppEscritorio\bin\Debug\EntityFramewo
 C:\Users\valentino\source\repos\Seminario1\AppEscritorio\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\valentino\source\repos\Seminario1\AppEscritorio\obj\Debug\AppEscritorio.csproj.CopyComplete
 C:\Users\valentino\source\repos\Seminario1\AppEscritorio\obj\Debug\AppEscritorio.csprojAssemblyReference.cache
+C:\Users\valentino\source\repos\Seminario1\AppEscritorio\obj\Debug\AppEscritorio.Login.resources
+C:\Users\valentino\source\repos\Seminario1\AppEscritorio\bin\Debug\BussinesModel.exe
+C:\Users\valentino\source\repos\Seminario1\AppEscritorio\bin\Debug\Models.exe
+C:\Users\valentino\source\repos\Seminario1\AppEscritorio\bin\Debug\BussinesModel.pdb
+C:\Users\valentino\source\repos\Seminario1\AppEscritorio\bin\Debug\BussinesModel.exe.config
+C:\Users\valentino\source\repos\Seminario1\AppEscritorio\bin\Debug\Models.pdb
+C:\Users\valentino\source\repos\Seminario1\AppEscritorio\bin\Debug\Models.exe.config
+C:\Users\valentino\source\repos\Seminario1\AppEscritorio\obj\Debug\AppEscritorio.Home.resources
