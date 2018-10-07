@@ -1,0 +1,15 @@
+C:\Users\valentino\source\repos\Seminario1\BussinesModel\bin\Debug\BussinesModel.exe.config
+C:\Users\valentino\source\repos\Seminario1\BussinesModel\bin\Debug\BussinesModel.exe
+C:\Users\valentino\source\repos\Seminario1\BussinesModel\bin\Debug\BussinesModel.pdb
+C:\Users\valentino\source\repos\Seminario1\BussinesModel\bin\Debug\EntityFramework.dll
+C:\Users\valentino\source\repos\Seminario1\BussinesModel\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\valentino\source\repos\Seminario1\BussinesModel\bin\Debug\Models.exe
+C:\Users\valentino\source\repos\Seminario1\BussinesModel\bin\Debug\Models.pdb
+C:\Users\valentino\source\repos\Seminario1\BussinesModel\bin\Debug\Models.exe.config
+C:\Users\valentino\source\repos\Seminario1\BussinesModel\bin\Debug\EntityFramework.xml
+C:\Users\valentino\source\repos\Seminario1\BussinesModel\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\valentino\source\repos\Seminario1\BussinesModel\obj\Debug\BussinesModel.csprojAssemblyReference.cache
+C:\Users\valentino\source\repos\Seminario1\BussinesModel\obj\Debug\BussinesModel.csproj.CoreCompileInputs.cache
+C:\Users\valentino\source\repos\Seminario1\BussinesModel\obj\Debug\BussinesModel.csproj.CopyComplete
+C:\Users\valentino\source\repos\Seminario1\BussinesModel\obj\Debug\BussinesModel.exe
+C:\Users\valentino\source\repos\Seminario1\BussinesModel\obj\Debug\BussinesModel.pdb
