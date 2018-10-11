@@ -20,3 +20,4 @@ C:\Users\valentino\source\repos\Seminario1\AppEscritorio\bin\Debug\BussinesModel
 C:\Users\valentino\source\repos\Seminario1\AppEscritorio\bin\Debug\Models.pdb
 C:\Users\valentino\source\repos\Seminario1\AppEscritorio\bin\Debug\Models.exe.config
 C:\Users\valentino\source\repos\Seminario1\AppEscritorio\obj\Debug\AppEscritorio.Home.resources
+C:\Users\valentino\source\repos\Seminario1\AppEscritorio\obj\Debug\AppEscritorio.CrearPedido.resources

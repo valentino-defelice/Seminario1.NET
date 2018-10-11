@@ -192,6 +192,18 @@ namespace BussinesModel
             _db.SaveChanges();
         }
 
+        public int crearSoloOrden()
+        {
+            Orden nueva = new Orden();
+            return nueva.OrdenId;
+        }
+
+        public string getPedidoId()
+        {
+            Guid tempCartId = Guid.NewGuid();
+            return tempCartId.ToString();
+        }
+
         public IQueryable<Orden> getOrdenesConfirmadas(int UsuarioId)
         {
             return _db.Ordenes.Where(x => x.UsuarioId == UsuarioId && x.Confirmado == true);

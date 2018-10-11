@@ -18,5 +18,15 @@ namespace AppEscritorio
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Login());
         }
+
+        public struct ShoppingCartUpdates
+        {
+            public string PedidoId;
+            public int UsuarioId;
+            public int OrdenId;
+            public int ProductoId;
+            public int CantidadComprada;
+            public bool EliminarItem;
+        }
     }
 }
