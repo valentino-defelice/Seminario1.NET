@@ -209,5 +209,14 @@ namespace BussinesModel
             return _db.Ordenes.Where(x => x.UsuarioId == UsuarioId && x.Confirmado == true);
         }
 
+        public void eliminarLineasPedidas(string PedidoId)
+        {
+            var productos = productosDelPedido(PedidoId);
+            foreach(var producto in productos)
+            {
+                _db.LineasdelPedido.Remove(producto);
+            }
+            _db.SaveChanges();
+        }
     }
 }

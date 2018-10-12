@@ -38,11 +38,11 @@ namespace AppEscritorio
                 resultado.Text = "Usuario o contraseña incorrecto.";
             else
             {
-                Usuario u = new Usuario();
-                u = _dq.getUsuarioByEmail(EmailTxtBox.Text);
+                Usuario User = new Usuario();
+                User = _dq.getUsuarioByEmail(EmailTxtBox.Text);
 
                 this.Hide();
-                Home objHome = new Home(u);
+                Home objHome = new Home(User);
                 objHome.Show();
             }
         }

@@ -13,12 +13,12 @@ namespace AppEscritorio
 {
     public partial class Home : Form
     {
-        Usuario u = new Usuario();
+        Program.ShoppingCartUpdates Valores = new Program.ShoppingCartUpdates();
 
-        public Home(Usuario user)
+        public Home(Usuario User)
         {
             InitializeComponent();
-            u = user;
+            Valores.Usuario = User;
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
@@ -35,7 +35,7 @@ namespace AppEscritorio
 
         private void button1_Click(object sender, EventArgs e)
         {
-            CrearPedido objCrearPedido = new CrearPedido(u);
+            CrearPedido objCrearPedido = new CrearPedido(Valores.Usuario);
 
             this.Hide();
             objCrearPedido.Show();
@@ -43,7 +43,7 @@ namespace AppEscritorio
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MisPedidos objMisPedidos = new MisPedidos();
+            MisPedidos objMisPedidos = new MisPedidos(Valores.Usuario);
             this.Hide();
             objMisPedidos.Show();
 

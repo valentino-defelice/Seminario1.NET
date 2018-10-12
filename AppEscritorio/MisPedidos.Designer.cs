@@ -28,12 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.gridMisPedidos = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.gridMisPedidos)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // gridMisPedidos
+            // 
+            this.gridMisPedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridMisPedidos.Location = new System.Drawing.Point(12, 163);
+            this.gridMisPedidos.Name = "gridMisPedidos";
+            this.gridMisPedidos.Size = new System.Drawing.Size(594, 150);
+            this.gridMisPedidos.TabIndex = 0;
+            this.gridMisPedidos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridMisPedidos_CellContentClick);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.label1.Location = new System.Drawing.Point(61, 70);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(130, 25);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Mis Pedidos";
+            // 
+            // MisPedidos
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(618, 433);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.gridMisPedidos);
+            this.Name = "MisPedidos";
             this.Text = "MisPedidos";
+            ((System.ComponentModel.ISupportInitialize)(this.gridMisPedidos)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.DataGridView gridMisPedidos;
+        private System.Windows.Forms.Label label1;
     }
 }

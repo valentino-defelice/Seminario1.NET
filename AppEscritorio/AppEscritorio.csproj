@@ -59,6 +59,12 @@
     <Compile Include="CrearPedido.Designer.cs">
       <DependentUpon>CrearPedido.cs</DependentUpon>
     </Compile>
+    <Compile Include="DetallePedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetallePedido.Designer.cs">
+      <DependentUpon>DetallePedido.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,11 +109,17 @@
     <EmbeddedResource Include="CrearPedido.resx">
       <DependentUpon>CrearPedido.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DetallePedido.resx">
+      <DependentUpon>DetallePedido.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MisPedidos.resx">
+      <DependentUpon>MisPedidos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

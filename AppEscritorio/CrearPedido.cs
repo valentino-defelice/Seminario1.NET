@@ -16,16 +16,16 @@ namespace AppEscritorio
     {
         DatabaseQuerys _dq = new DatabaseQuerys();
         ApplicationDbContext _db = new ApplicationDbContext();
+        Program.ShoppingCartUpdates Valores = new Program.ShoppingCartUpdates();
 
-        public int OrdenId { get; set; }
         public string PedidoId { get; set; }
         public Usuario Usuario { get; set; }
-        Program.ShoppingCartUpdates Valores = new Program.ShoppingCartUpdates();
+        
 
         public CrearPedido(Usuario user)
         {
             InitializeComponent();
-            Valores.UsuarioId = user.Id;
+            Valores.Usuario = user;
         }
 
         private void CrearPedido_Load(object sender, EventArgs e)
@@ -36,7 +36,6 @@ namespace AppEscritorio
             this.productoesTableAdapter.Fill(this._Models_DbContextDataSet.Productoes);
 
             Valores.PedidoId = _dq.getPedidoId();
-            Valores.OrdenId = _dq.crearSoloOrden();
 
         }
 
@@ -53,7 +52,7 @@ namespace AppEscritorio
                 {
                     LineaProductoId = Guid.NewGuid().ToString(),
                     PedidoId = Valores.PedidoId,
-                    UsuarioId = Valores.UsuarioId,
+                    UsuarioId = Valores.Usuario.Id,
                     Cantidad = 1,
                     Producto = _dq.getProductoById(productId),
                     ProductoId = productId,
@@ -67,13 +66,49 @@ namespace AppEscritorio
             }
 
             // gridOrderLines.DataSource = _dq.productosDelPedido(Valores.PedidoId).ToList();
-            gridOrderLines.DataSource = _db.LineasdelPedido.Select(o => new { Column1 = o.Producto.Nombre, Column2 = o.Cantidad });
-
+            var lineasPedidas = _dq.productosDelPedido(Valores.PedidoId);
+            gridOrderLines.DataSource = lineasPedidas.Select(o => 
+                new
+                {
+                    Nombre = o.Producto.Nombre,
+                    Cantidad = o.Cantidad
+                }).ToList();
         }
 
         private void gridOrderLines_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void btnLimpiarCarrito_Click(object sender, EventArgs e)
+        {
+            _dq.eliminarLineasPedidas(Valores.PedidoId);
+
+            var lineasPedidas = _dq.productosDelPedido(Valores.PedidoId);
+            gridOrderLines.DataSource = lineasPedidas.Select(o =>
+                new
+                {
+                    Nombre = o.Producto.Nombre,
+                    Cantidad = o.Cantidad
+                }).ToList();
+        }
+
+        private void btnConfirmarCompra_Click(object sender, EventArgs e)
+        {
+            var productos = _dq.productosDelPedido(Valores.PedidoId);
+            if (productos == null) {
+                _dq.crearOrden(Valores.PedidoId, Valores.Usuario.Id);
+
+                MisPedidos mp = new MisPedidos(Valores.Usuario);
+
+                this.Hide();
+                mp.Show();
+            }
+            else
+            {
+                lbNotificaciones.Text = "No se puede confirmar un pedido sin productos.";
+                lbNotificaciones.ForeColor = System.Drawing.Color.Red;
+            }
         }
     }
 }
