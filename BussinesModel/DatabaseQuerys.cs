@@ -218,5 +218,11 @@ namespace BussinesModel
             }
             _db.SaveChanges();
         }
+
+        public string getPedidoIdByOrdenId(int OrdenId)
+        {
+            var pedido = _db.Ordenes.SingleOrDefault(o => o.OrdenId == OrdenId);
+            return pedido.PedidoId;
+        }
     }
 }

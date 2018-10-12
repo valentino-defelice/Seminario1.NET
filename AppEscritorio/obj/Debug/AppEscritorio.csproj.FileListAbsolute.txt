@@ -23,3 +23,7 @@ C:\Users\valentino\source\repos\Seminario1\AppEscritorio\obj\Debug\AppEscritorio
 C:\Users\valentino\source\repos\Seminario1\AppEscritorio\obj\Debug\AppEscritorio.CrearPedido.resources
 C:\Users\valentino\source\repos\Seminario1\AppEscritorio\obj\Debug\AppEscritorio.DetallePedido.resources
 C:\Users\valentino\source\repos\Seminario1\AppEscritorio\obj\Debug\AppEscritorio.MisPedidos.resources
+C:\Users\valentino\source\repos\Seminario1\AppEscritorio\obj\Debug\AppEscritorio.AdminHome.resources
+C:\Users\valentino\source\repos\Seminario1\AppEscritorio\obj\Debug\AppEscritorio.CrearCategoria.resources
+C:\Users\valentino\source\repos\Seminario1\AppEscritorio\obj\Debug\AppEscritorio.CrearProducto.resources
+C:\Users\valentino\source\repos\Seminario1\AppEscritorio\obj\Debug\AppEscritorio.ReportePedidos.resources

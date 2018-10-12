@@ -48,5 +48,10 @@ namespace AppEscritorio
             objMisPedidos.Show();
 
         }
+
+        private void btnAdmin_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

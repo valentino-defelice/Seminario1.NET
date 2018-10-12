@@ -52,5 +52,13 @@ namespace AppEscritorio
             dp.Show();
 
         }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            Home h = new Home(Valores.Usuario);
+
+            this.Hide();
+            h.Show();
+        }
     }
 }

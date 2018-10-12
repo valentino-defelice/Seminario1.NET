@@ -50,6 +50,7 @@
             this.btnConfirmarCompra = new System.Windows.Forms.Button();
             this.btnLimpiarCarrito = new System.Windows.Forms.Button();
             this.lbNotificaciones = new System.Windows.Forms.Label();
+            this.btnHome = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productoesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._Models_DbContextDataSet)).BeginInit();
@@ -71,7 +72,7 @@
             this.precioDataGridViewTextBoxColumn,
             this.AgregarAlCarrito});
             this.dataGridView1.DataSource = this.productoesBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(208, 119);
+            this.dataGridView1.Location = new System.Drawing.Point(213, 119);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(445, 151);
             this.dataGridView1.TabIndex = 0;
@@ -152,7 +153,7 @@
             // gridOrderLines
             // 
             this.gridOrderLines.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridOrderLines.Location = new System.Drawing.Point(208, 327);
+            this.gridOrderLines.Location = new System.Drawing.Point(213, 327);
             this.gridOrderLines.Name = "gridOrderLines";
             this.gridOrderLines.Size = new System.Drawing.Size(272, 150);
             this.gridOrderLines.TabIndex = 1;
@@ -172,7 +173,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.label2.Location = new System.Drawing.Point(209, 299);
+            this.label2.Location = new System.Drawing.Point(214, 299);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(132, 25);
             this.label2.TabIndex = 4;
@@ -182,7 +183,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.label3.Location = new System.Drawing.Point(209, 91);
+            this.label3.Location = new System.Drawing.Point(214, 91);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(109, 25);
             this.label3.TabIndex = 5;
@@ -190,7 +191,7 @@
             // 
             // btnConfirmarCompra
             // 
-            this.btnConfirmarCompra.Location = new System.Drawing.Point(16, 119);
+            this.btnConfirmarCompra.Location = new System.Drawing.Point(29, 116);
             this.btnConfirmarCompra.Name = "btnConfirmarCompra";
             this.btnConfirmarCompra.Size = new System.Drawing.Size(105, 29);
             this.btnConfirmarCompra.TabIndex = 6;
@@ -200,7 +201,7 @@
             // 
             // btnLimpiarCarrito
             // 
-            this.btnLimpiarCarrito.Location = new System.Drawing.Point(16, 196);
+            this.btnLimpiarCarrito.Location = new System.Drawing.Point(29, 193);
             this.btnLimpiarCarrito.Name = "btnLimpiarCarrito";
             this.btnLimpiarCarrito.Size = new System.Drawing.Size(105, 29);
             this.btnLimpiarCarrito.TabIndex = 7;
@@ -211,17 +212,28 @@
             // lbNotificaciones
             // 
             this.lbNotificaciones.AutoSize = true;
-            this.lbNotificaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.lbNotificaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.lbNotificaciones.Location = new System.Drawing.Point(250, 18);
             this.lbNotificaciones.Name = "lbNotificaciones";
-            this.lbNotificaciones.Size = new System.Drawing.Size(0, 25);
+            this.lbNotificaciones.Size = new System.Drawing.Size(0, 17);
             this.lbNotificaciones.TabIndex = 8;
+            // 
+            // btnHome
+            // 
+            this.btnHome.Location = new System.Drawing.Point(29, 271);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(105, 29);
+            this.btnHome.TabIndex = 9;
+            this.btnHome.Text = "Inicio";
+            this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // CrearPedido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 530);
+            this.ClientSize = new System.Drawing.Size(708, 496);
+            this.Controls.Add(this.btnHome);
             this.Controls.Add(this.lbNotificaciones);
             this.Controls.Add(this.btnLimpiarCarrito);
             this.Controls.Add(this.btnConfirmarCompra);
@@ -269,5 +281,6 @@
         private System.Windows.Forms.Button btnConfirmarCompra;
         private System.Windows.Forms.Button btnLimpiarCarrito;
         private System.Windows.Forms.Label lbNotificaciones;
+        private System.Windows.Forms.Button btnHome;
     }
 }

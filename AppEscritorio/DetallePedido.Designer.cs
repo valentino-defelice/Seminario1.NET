@@ -33,20 +33,22 @@
             this.btnMisPedidos = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lblResultado = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblTotal = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.gridDetalleDelPedido)).BeginInit();
             this.SuspendLayout();
             // 
             // gridDetalleDelPedido
             // 
             this.gridDetalleDelPedido.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridDetalleDelPedido.Location = new System.Drawing.Point(217, 159);
+            this.gridDetalleDelPedido.Location = new System.Drawing.Point(224, 126);
             this.gridDetalleDelPedido.Name = "gridDetalleDelPedido";
-            this.gridDetalleDelPedido.Size = new System.Drawing.Size(517, 166);
+            this.gridDetalleDelPedido.Size = new System.Drawing.Size(380, 166);
             this.gridDetalleDelPedido.TabIndex = 0;
             // 
             // btnInicio
             // 
-            this.btnInicio.Location = new System.Drawing.Point(45, 159);
+            this.btnInicio.Location = new System.Drawing.Point(37, 126);
             this.btnInicio.Name = "btnInicio";
             this.btnInicio.Size = new System.Drawing.Size(118, 32);
             this.btnInicio.TabIndex = 1;
@@ -56,7 +58,7 @@
             // 
             // btnMisPedidos
             // 
-            this.btnMisPedidos.Location = new System.Drawing.Point(45, 247);
+            this.btnMisPedidos.Location = new System.Drawing.Point(37, 214);
             this.btnMisPedidos.Name = "btnMisPedidos";
             this.btnMisPedidos.Size = new System.Drawing.Size(118, 32);
             this.btnMisPedidos.TabIndex = 2;
@@ -70,9 +72,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
             this.label1.Location = new System.Drawing.Point(64, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 25);
+            this.label1.Size = new System.Drawing.Size(185, 25);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Pedido - ";
+            this.label1.Text = "Detalle del pedido";
             // 
             // lblResultado
             // 
@@ -83,11 +85,32 @@
             this.lblResultado.Size = new System.Drawing.Size(0, 25);
             this.lblResultado.TabIndex = 4;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.label2.Location = new System.Drawing.Point(431, 339);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(72, 25);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Total: ";
+            // 
+            // lblTotal
+            // 
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.lblTotal.Location = new System.Drawing.Point(509, 339);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(0, 25);
+            this.lblTotal.TabIndex = 6;
+            // 
             // DetallePedido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(657, 388);
+            this.Controls.Add(this.lblTotal);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnMisPedidos);
@@ -108,5 +131,7 @@
         private System.Windows.Forms.Button btnMisPedidos;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblResultado;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblTotal;
     }
 }

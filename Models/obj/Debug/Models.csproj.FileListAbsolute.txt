@@ -10,5 +10,3 @@ C:\Users\valentino\source\repos\Seminario1\Models\obj\Debug\Models.csproj.CopyCo
 C:\Users\valentino\source\repos\Seminario1\Models\obj\Debug\Models.exe
 C:\Users\valentino\source\repos\Seminario1\Models\obj\Debug\Models.pdb
 C:\Users\valentino\source\repos\Seminario1\Models\obj\Debug\Models.csprojAssemblyReference.cache
-C:\Users\valentino\source\repos\Seminario1\Models\bin\Debug\Models.exe.CodeAnalysisLog.xml
-C:\Users\valentino\source\repos\Seminario1\Models\bin\Debug\Models.exe.lastcodeanalysissucceeded

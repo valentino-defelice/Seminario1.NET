@@ -53,11 +53,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminHome.Designer.cs">
+      <DependentUpon>AdminHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrearCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearCategoria.Designer.cs">
+      <DependentUpon>CrearCategoria.cs</DependentUpon>
+    </Compile>
     <Compile Include="CrearPedido.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CrearPedido.Designer.cs">
       <DependentUpon>CrearPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrearProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearProducto.Designer.cs">
+      <DependentUpon>CrearProducto.cs</DependentUpon>
     </Compile>
     <Compile Include="DetallePedido.cs">
       <SubType>Form</SubType>
@@ -91,6 +109,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportePedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportePedidos.Designer.cs">
+      <DependentUpon>ReportePedidos.cs</DependentUpon>
+    </Compile>
     <Compile Include="_Models_DbContextDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -106,8 +130,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_Models_DbContextDataSet2.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AdminHome.resx">
+      <DependentUpon>AdminHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrearCategoria.resx">
+      <DependentUpon>CrearCategoria.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CrearPedido.resx">
       <DependentUpon>CrearPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrearProducto.resx">
+      <DependentUpon>CrearProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DetallePedido.resx">
       <DependentUpon>DetallePedido.cs</DependentUpon>
@@ -130,6 +163,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ReportePedidos.resx">
+      <DependentUpon>ReportePedidos.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

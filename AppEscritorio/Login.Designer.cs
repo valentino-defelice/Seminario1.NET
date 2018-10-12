@@ -39,7 +39,7 @@
             // 
             // IngresarBtn
             // 
-            this.IngresarBtn.Location = new System.Drawing.Point(342, 384);
+            this.IngresarBtn.Location = new System.Drawing.Point(83, 255);
             this.IngresarBtn.Name = "IngresarBtn";
             this.IngresarBtn.Size = new System.Drawing.Size(96, 23);
             this.IngresarBtn.TabIndex = 0;
@@ -49,27 +49,27 @@
             // 
             // CrearBtn
             // 
-            this.CrearBtn.Location = new System.Drawing.Point(460, 384);
+            this.CrearBtn.Location = new System.Drawing.Point(201, 255);
             this.CrearBtn.Name = "CrearBtn";
             this.CrearBtn.Size = new System.Drawing.Size(96, 23);
             this.CrearBtn.TabIndex = 1;
             this.CrearBtn.Text = "Crear Usuario";
             this.CrearBtn.UseVisualStyleBackColor = true;
+            this.CrearBtn.Click += new System.EventHandler(this.CrearBtn_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(339, 261);
+            this.label1.Location = new System.Drawing.Point(80, 132);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(32, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "Email";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(338, 301);
+            this.label2.Location = new System.Drawing.Point(79, 172);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(61, 13);
             this.label2.TabIndex = 3;
@@ -77,14 +77,14 @@
             // 
             // EmailTxtBox
             // 
-            this.EmailTxtBox.Location = new System.Drawing.Point(438, 261);
+            this.EmailTxtBox.Location = new System.Drawing.Point(179, 132);
             this.EmailTxtBox.Name = "EmailTxtBox";
             this.EmailTxtBox.Size = new System.Drawing.Size(118, 20);
             this.EmailTxtBox.TabIndex = 4;
             // 
             // PasswordTxtBox
             // 
-            this.PasswordTxtBox.Location = new System.Drawing.Point(438, 293);
+            this.PasswordTxtBox.Location = new System.Drawing.Point(179, 164);
             this.PasswordTxtBox.Name = "PasswordTxtBox";
             this.PasswordTxtBox.Size = new System.Drawing.Size(118, 20);
             this.PasswordTxtBox.TabIndex = 5;
@@ -92,7 +92,7 @@
             // resultado
             // 
             this.resultado.AutoSize = true;
-            this.resultado.Location = new System.Drawing.Point(342, 342);
+            this.resultado.Location = new System.Drawing.Point(115, 212);
             this.resultado.Name = "resultado";
             this.resultado.Size = new System.Drawing.Size(0, 13);
             this.resultado.TabIndex = 6;
@@ -101,7 +101,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1010, 651);
+            this.ClientSize = new System.Drawing.Size(381, 413);
             this.Controls.Add(this.resultado);
             this.Controls.Add(this.PasswordTxtBox);
             this.Controls.Add(this.EmailTxtBox);
@@ -109,6 +109,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.CrearBtn);
             this.Controls.Add(this.IngresarBtn);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Login";
             this.Text = "Login";
             this.ResumeLayout(false);

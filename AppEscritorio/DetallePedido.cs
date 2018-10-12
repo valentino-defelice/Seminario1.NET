@@ -24,7 +24,10 @@ namespace AppEscritorio
             Valores.Usuario = User;
             Valores.OrdenId = OrdenId;
             // lblResultado.Text = ("" + OrdenId);
-            
+            var PedidoId = _dq.getPedidoIdByOrdenId(Valores.OrdenId);
+            var total = _dq.GetTotal(PedidoId);
+            lblTotal.Text = total.ToString();
+
             var data = _dq.getProductosByOrden(OrdenId).ToList();
             gridDetalleDelPedido.DataSource = data.Select(o =>
                 new

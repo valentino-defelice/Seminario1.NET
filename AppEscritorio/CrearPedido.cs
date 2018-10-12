@@ -18,10 +18,6 @@ namespace AppEscritorio
         ApplicationDbContext _db = new ApplicationDbContext();
         Program.ShoppingCartUpdates Valores = new Program.ShoppingCartUpdates();
 
-        public string PedidoId { get; set; }
-        public Usuario Usuario { get; set; }
-        
-
         public CrearPedido(Usuario user)
         {
             InitializeComponent();
@@ -109,6 +105,14 @@ namespace AppEscritorio
                 lbNotificaciones.Text = "No se puede confirmar un pedido sin productos.";
                 lbNotificaciones.ForeColor = System.Drawing.Color.Red;
             }
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            Home h = new Home(Valores.Usuario);
+
+            this.Hide();
+            h.Show();
         }
     }
 }

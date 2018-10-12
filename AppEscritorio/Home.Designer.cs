@@ -54,9 +54,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(152, 308);
+            this.button1.Location = new System.Drawing.Point(129, 133);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(126, 23);
+            this.button1.Size = new System.Drawing.Size(126, 37);
             this.button1.TabIndex = 0;
             this.button1.Text = "Crear un Pedido";
             this.button1.UseVisualStyleBackColor = true;
@@ -64,9 +64,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(394, 308);
+            this.button2.Location = new System.Drawing.Point(129, 195);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(126, 23);
+            this.button2.Size = new System.Drawing.Size(126, 37);
             this.button2.TabIndex = 1;
             this.button2.Text = "Mis Pedidos";
             this.button2.UseVisualStyleBackColor = true;
@@ -76,9 +76,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(699, 481);
+            this.ClientSize = new System.Drawing.Size(381, 413);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Home";
             this.Text = "HomeForm";
             this.Load += new System.EventHandler(this.Home_Load);
