@@ -27,3 +27,4 @@ C:\Users\valentino\source\repos\Seminario1\AppEscritorio\obj\Debug\AppEscritorio
 C:\Users\valentino\source\repos\Seminario1\AppEscritorio\obj\Debug\AppEscritorio.CrearCategoria.resources
 C:\Users\valentino\source\repos\Seminario1\AppEscritorio\obj\Debug\AppEscritorio.CrearProducto.resources
 C:\Users\valentino\source\repos\Seminario1\AppEscritorio\obj\Debug\AppEscritorio.ReportePedidos.resources
+C:\Users\valentino\source\repos\Seminario1\AppEscritorio\obj\Debug\AppEscritorio.Productos.resources

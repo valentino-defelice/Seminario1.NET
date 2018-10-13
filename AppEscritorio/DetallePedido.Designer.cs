@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DetallePedido));
             this.gridDetalleDelPedido = new System.Windows.Forms.DataGridView();
             this.btnInicio = new System.Windows.Forms.Button();
             this.btnMisPedidos = new System.Windows.Forms.Button();
@@ -40,6 +41,7 @@
             // 
             // gridDetalleDelPedido
             // 
+            this.gridDetalleDelPedido.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.gridDetalleDelPedido.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridDetalleDelPedido.Location = new System.Drawing.Point(224, 126);
             this.gridDetalleDelPedido.Name = "gridDetalleDelPedido";
@@ -48,6 +50,9 @@
             // 
             // btnInicio
             // 
+            this.btnInicio.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnInicio.BackgroundImage")));
+            this.btnInicio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnInicio.ForeColor = System.Drawing.Color.Black;
             this.btnInicio.Location = new System.Drawing.Point(37, 126);
             this.btnInicio.Name = "btnInicio";
             this.btnInicio.Size = new System.Drawing.Size(118, 32);
@@ -58,6 +63,9 @@
             // 
             // btnMisPedidos
             // 
+            this.btnMisPedidos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMisPedidos.BackgroundImage")));
+            this.btnMisPedidos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMisPedidos.ForeColor = System.Drawing.Color.Black;
             this.btnMisPedidos.Location = new System.Drawing.Point(37, 214);
             this.btnMisPedidos.Name = "btnMisPedidos";
             this.btnMisPedidos.Size = new System.Drawing.Size(118, 32);
@@ -69,10 +77,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(64, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(185, 25);
+            this.label1.Size = new System.Drawing.Size(164, 24);
             this.label1.TabIndex = 3;
             this.label1.Text = "Detalle del pedido";
             // 
@@ -88,26 +98,31 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(431, 339);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 25);
+            this.label2.Size = new System.Drawing.Size(61, 24);
             this.label2.TabIndex = 5;
             this.label2.Text = "Total: ";
             // 
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
-            this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.lblTotal.BackColor = System.Drawing.Color.Transparent;
+            this.lblTotal.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotal.Location = new System.Drawing.Point(509, 339);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(0, 25);
+            this.lblTotal.Size = new System.Drawing.Size(0, 24);
             this.lblTotal.TabIndex = 6;
             // 
             // DetallePedido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(657, 388);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.label2);
@@ -116,6 +131,7 @@
             this.Controls.Add(this.btnMisPedidos);
             this.Controls.Add(this.btnInicio);
             this.Controls.Add(this.gridDetalleDelPedido);
+            this.DoubleBuffered = true;
             this.Name = "DetallePedido";
             this.Text = "DetallePedido";
             ((System.ComponentModel.ISupportInitialize)(this.gridDetalleDelPedido)).EndInit();

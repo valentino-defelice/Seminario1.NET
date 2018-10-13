@@ -32,7 +32,6 @@ namespace AppEscritorio
             this.productoesTableAdapter.Fill(this._Models_DbContextDataSet.Productoes);
 
             Valores.PedidoId = _dq.getPedidoId();
-
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -91,8 +90,9 @@ namespace AppEscritorio
 
         private void btnConfirmarCompra_Click(object sender, EventArgs e)
         {
-            var productos = _dq.productosDelPedido(Valores.PedidoId);
-            if (productos == null) {
+            List<LineaProducto> productos = _dq.productosDelPedido(Valores.PedidoId);
+            
+            if (productos.Any()) {
                 _dq.crearOrden(Valores.PedidoId, Valores.Usuario.Id);
 
                 MisPedidos mp = new MisPedidos(Valores.Usuario);

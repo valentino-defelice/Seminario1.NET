@@ -40,5 +40,13 @@ namespace AppEscritorio
             this.Hide();
             rp.Show();
         }
+
+        private void btnProductos_Click(object sender, EventArgs e)
+        {
+            Productos p = new Productos();
+
+            this.Hide();
+            p.Show();
+        }
     }
 }

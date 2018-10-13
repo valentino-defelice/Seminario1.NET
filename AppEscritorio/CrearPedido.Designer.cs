@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CrearPedido));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,6 +65,7 @@
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
@@ -72,6 +74,7 @@
             this.precioDataGridViewTextBoxColumn,
             this.AgregarAlCarrito});
             this.dataGridView1.DataSource = this.productoesBindingSource;
+            this.dataGridView1.GridColor = System.Drawing.SystemColors.Desktop;
             this.dataGridView1.Location = new System.Drawing.Point(213, 119);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(445, 151);
@@ -152,6 +155,7 @@
             // 
             // gridOrderLines
             // 
+            this.gridOrderLines.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.gridOrderLines.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridOrderLines.Location = new System.Drawing.Point(213, 327);
             this.gridOrderLines.Name = "gridOrderLines";
@@ -162,56 +166,69 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.25F);
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Calibri", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(32, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(232, 39);
+            this.label1.Size = new System.Drawing.Size(214, 42);
             this.label1.TabIndex = 2;
             this.label1.Text = "Nuevo Pedido";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(214, 299);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(132, 25);
+            this.label2.Size = new System.Drawing.Size(113, 24);
             this.label2.TabIndex = 4;
             this.label2.Text = "Mi selección";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(214, 91);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(109, 25);
+            this.label3.Size = new System.Drawing.Size(94, 24);
             this.label3.TabIndex = 5;
             this.label3.Text = "Productos";
             // 
             // btnConfirmarCompra
             // 
+            this.btnConfirmarCompra.BackColor = System.Drawing.Color.Transparent;
+            this.btnConfirmarCompra.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnConfirmarCompra.BackgroundImage")));
+            this.btnConfirmarCompra.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnConfirmarCompra.Location = new System.Drawing.Point(29, 116);
             this.btnConfirmarCompra.Name = "btnConfirmarCompra";
             this.btnConfirmarCompra.Size = new System.Drawing.Size(105, 29);
             this.btnConfirmarCompra.TabIndex = 6;
             this.btnConfirmarCompra.Text = "Confirmar Compra";
-            this.btnConfirmarCompra.UseVisualStyleBackColor = true;
+            this.btnConfirmarCompra.UseVisualStyleBackColor = false;
             this.btnConfirmarCompra.Click += new System.EventHandler(this.btnConfirmarCompra_Click);
             // 
             // btnLimpiarCarrito
             // 
+            this.btnLimpiarCarrito.BackColor = System.Drawing.Color.Transparent;
+            this.btnLimpiarCarrito.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLimpiarCarrito.BackgroundImage")));
+            this.btnLimpiarCarrito.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnLimpiarCarrito.Location = new System.Drawing.Point(29, 193);
             this.btnLimpiarCarrito.Name = "btnLimpiarCarrito";
             this.btnLimpiarCarrito.Size = new System.Drawing.Size(105, 29);
             this.btnLimpiarCarrito.TabIndex = 7;
             this.btnLimpiarCarrito.Text = "Limpiar Selección";
-            this.btnLimpiarCarrito.UseVisualStyleBackColor = true;
+            this.btnLimpiarCarrito.UseVisualStyleBackColor = false;
             this.btnLimpiarCarrito.Click += new System.EventHandler(this.btnLimpiarCarrito_Click);
             // 
             // lbNotificaciones
             // 
             this.lbNotificaciones.AutoSize = true;
+            this.lbNotificaciones.BackColor = System.Drawing.Color.Transparent;
             this.lbNotificaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.lbNotificaciones.Location = new System.Drawing.Point(250, 18);
             this.lbNotificaciones.Name = "lbNotificaciones";
@@ -220,18 +237,23 @@
             // 
             // btnHome
             // 
+            this.btnHome.BackColor = System.Drawing.Color.GhostWhite;
+            this.btnHome.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnHome.BackgroundImage")));
+            this.btnHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnHome.Location = new System.Drawing.Point(29, 271);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(105, 29);
             this.btnHome.TabIndex = 9;
             this.btnHome.Text = "Inicio";
-            this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.UseVisualStyleBackColor = false;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // CrearPedido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(708, 496);
             this.Controls.Add(this.btnHome);
             this.Controls.Add(this.lbNotificaciones);
@@ -242,6 +264,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.gridOrderLines);
             this.Controls.Add(this.dataGridView1);
+            this.DoubleBuffered = true;
             this.Name = "CrearPedido";
             this.Text = "CrearPedido";
             this.Load += new System.EventHandler(this.CrearPedido_Load);

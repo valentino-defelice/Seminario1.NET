@@ -51,6 +51,11 @@ namespace BussinesModel
             return query;
         }
 
+        public List<Producto> getProductos()
+        {
+            return _db.Productos.ToList();
+        }
+
         public IQueryable<Producto> GetProduct(int? productId)
         {
             IQueryable<Producto> query = _db.Productos;
@@ -223,6 +228,11 @@ namespace BussinesModel
         {
             var pedido = _db.Ordenes.SingleOrDefault(o => o.OrdenId == OrdenId);
             return pedido.PedidoId;
+        }
+
+        public List<Orden> getOrdenes()
+        {
+            return _db.Ordenes.ToList();
         }
     }
 }

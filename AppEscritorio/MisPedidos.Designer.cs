@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MisPedidos));
             this.gridMisPedidos = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.btnHome = new System.Windows.Forms.Button();
@@ -36,6 +37,7 @@
             // 
             // gridMisPedidos
             // 
+            this.gridMisPedidos.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.gridMisPedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridMisPedidos.Location = new System.Drawing.Point(142, 163);
             this.gridMisPedidos.Name = "gridMisPedidos";
@@ -46,7 +48,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(48, 58);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(130, 25);
@@ -55,6 +59,9 @@
             // 
             // btnHome
             // 
+            this.btnHome.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnHome.BackgroundImage")));
+            this.btnHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnHome.ForeColor = System.Drawing.Color.White;
             this.btnHome.Location = new System.Drawing.Point(12, 138);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(101, 34);
@@ -67,10 +74,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(618, 433);
             this.Controls.Add(this.btnHome);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.gridMisPedidos);
+            this.DoubleBuffered = true;
             this.Name = "MisPedidos";
             this.Text = "MisPedidos";
             ((System.ComponentModel.ISupportInitialize)(this.gridMisPedidos)).EndInit();
