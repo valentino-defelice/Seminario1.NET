@@ -20,6 +20,7 @@ namespace AppEscritorio
         public Login()
         {
             InitializeComponent();
+            PasswordTxtBox.PasswordChar = '*';
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -60,7 +61,7 @@ namespace AppEscritorio
         {
             var result = _dq.comprobarUsuario(EmailTxtBox.Text, PasswordTxtBox.Text);
 
-            if (EmailTxtBox != null && PasswordTxtBox != null)
+            if (!(String.IsNullOrEmpty(EmailTxtBox.Text) || String.IsNullOrEmpty(PasswordTxtBox.Text)))
             {
                 if (!result)
                 {

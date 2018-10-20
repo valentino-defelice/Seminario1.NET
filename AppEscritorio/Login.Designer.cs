@@ -107,9 +107,10 @@
             // resultado
             // 
             this.resultado.AutoSize = true;
-            this.resultado.Location = new System.Drawing.Point(111, 212);
+            this.resultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.resultado.Location = new System.Drawing.Point(72, 212);
             this.resultado.Name = "resultado";
-            this.resultado.Size = new System.Drawing.Size(0, 13);
+            this.resultado.Size = new System.Drawing.Size(0, 20);
             this.resultado.TabIndex = 6;
             // 
             // Login
