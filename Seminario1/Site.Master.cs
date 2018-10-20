@@ -11,21 +11,28 @@ namespace Seminario1
 {
     public partial class SiteMaster : MasterPage
     {
+        DatabaseQuerys _dq = new DatabaseQuerys();
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!(Session["Usuario"] == null) && Session["Usuario"].ToString() == "admin@admin.com")
+            
+            if (!(Session["Usuario"] == null))
             {
-                vistaCerrarSesion.Visible = true;
-                adminLink.Visible = true;
-                dashboard.Visible = true;
-                vistaLogin.Visible = false;
-            } else if (!(Session["Usuario"] == null))
-            {
-                vistaCerrarSesion.Visible = true;
-                vistaLogin.Visible = false;
-                dashboard.Visible = true;
-            }
-                
+                var user = _dq.getUsuarioByEmail(Session["Usuario"].ToString());
+                if(user.Adimn == true)
+                { 
+                    vistaCerrarSesion.Visible = true;
+                    adminLink.Visible = true;
+                    dashboard.Visible = true;
+                    vistaLogin.Visible = false;
+                }
+                else if (!(Session["Usuario"] == null))
+                {
+                    vistaCerrarSesion.Visible = true;
+                    vistaLogin.Visible = false;
+                    dashboard.Visible = true;
+                }
+            }   
         }
 
         protected void Page_PreRender(object sender, EventArgs e)

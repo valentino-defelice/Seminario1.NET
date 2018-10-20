@@ -59,24 +59,32 @@ namespace AppEscritorio
         private void CrearBtn_Click(object sender, EventArgs e)
         {
             var result = _dq.comprobarUsuario(EmailTxtBox.Text, PasswordTxtBox.Text);
-            
-            if(!result)
+
+            if (EmailTxtBox != null && PasswordTxtBox != null)
             {
-                if (_dq.createUser(EmailTxtBox.Text, PasswordTxtBox.Text))
+                if (!result)
                 {
-                    resultado.Text = "Usuario creado con éxito.";
-                    resultado.ForeColor = System.Drawing.Color.Green;
+                    if (_dq.createUser(EmailTxtBox.Text, PasswordTxtBox.Text))
+                    {
+                        resultado.Text = "Usuario creado con éxito.";
+                        resultado.ForeColor = System.Drawing.Color.Green;
+                    }
+                    else
+                    {
+                        resultado.Text = "Hubo un inconveniente creando el usuario";
+                        resultado.ForeColor = System.Drawing.Color.Red;
+                    }
                 }
                 else
                 {
-                    resultado.Text = "Hubo un inconveniente creando el usuario";
-                    resultado.ForeColor = System.Drawing.Color.Red;
+                    resultado.Text = "Ya existe un usuario con ese E-mail";
+                    resultado.ForeColor = System.Drawing.Color.YellowGreen;
                 }
             }
             else
             {
-                resultado.Text = "Ya existe un usuario con ese E-mail";
-                resultado.ForeColor = System.Drawing.Color.YellowGreen;
+                resultado.Text = "Debe ingresar un E-mail y Contraseña";
+                resultado.ForeColor = System.Drawing.Color.Red;
             }
         }
     }

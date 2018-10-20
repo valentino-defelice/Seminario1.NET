@@ -33,9 +33,29 @@ namespace Seminario1
 
         protected void ButtonCrear_Click1(object sender, EventArgs e)
         {
-            var result = _dq.createUser(TextBoxEmail.Text, TextBoxPass.Text);
-            if (result)
-                resultado.Text = "Usuario creado con éxito";
+            var result = _dq.comprobarUsuario(TextBoxEmail.Text, TextBoxPass.Text);
+
+            if (TextBoxEmail != null && TextBoxPass != null)
+            {
+
+                if (!result)
+                {
+                    var newUser = _dq.createUser(TextBoxEmail.Text, TextBoxPass.Text);
+                    resultado.Text = "Usuario creado con éxito";
+                    resultado.ForeColor = System.Drawing.Color.Green;
+                }
+                else
+                {
+                    resultado.Text = "El usuario ya existe";
+                    resultado.ForeColor = System.Drawing.Color.Yellow;
+                }
+            }
+            else
+            {
+                resultado.Text = "Debe ingresar un Email y contraseña";
+                resultado.ForeColor = System.Drawing.Color.Red;
+            }
         }
+
     }
 }
