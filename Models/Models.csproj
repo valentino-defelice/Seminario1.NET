@@ -63,6 +63,10 @@
     <Compile Include="Categoria.cs" />
     <Compile Include="DataEntry.cs" />
     <Compile Include="LineaProducto.cs" />
+    <Compile Include="Migrations\201811060254320_init.cs" />
+    <Compile Include="Migrations\201811060254320_init.Designer.cs">
+      <DependentUpon>201811060254320_init.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Orden.cs" />
     <Compile Include="Producto.cs" />
@@ -73,6 +77,11 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201811060254320_init.resx">
+      <DependentUpon>201811060254320_init.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

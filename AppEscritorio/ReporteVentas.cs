@@ -20,12 +20,12 @@ namespace AppEscritorio
         private void ReporteVentas_Load(object sender, EventArgs e)
         {
 
-            this.reportViewer1.RefreshReport();
+            //this.reportViewer1.RefreshReport();
         }
 
-        private void reportViewer1_Load(object sender, EventArgs e)
+        /*private void reportViewer1_Load(object sender, EventArgs e)
         {
 
-        }
+        }*/
     }
 }
