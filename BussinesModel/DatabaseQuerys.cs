@@ -192,6 +192,7 @@ namespace BussinesModel
             nueva.UsuarioId = UsuarioId;
             nueva.FechaCreacion = DateTime.Now;
             nueva.Confirmado = true;
+            nueva.total = GetTotal(PedidoId);
 
             _db.Ordenes.Add(nueva);
             _db.SaveChanges();

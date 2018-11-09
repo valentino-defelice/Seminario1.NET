@@ -26,3 +26,4 @@ C:\Users\Valentino\Documents\GitHub\Seminario1.NET\Models\obj\Debug\Models.exe
 C:\Users\Valentino\Documents\GitHub\Seminario1.NET\Models\obj\Debug\Models.pdb
 C:\Users\Valentino\Documents\GitHub\Seminario1.NET\Models\obj\Debug\Models.Migrations.init.resources
 C:\Users\Valentino\Documents\GitHub\Seminario1.NET\Models\obj\Debug\Models.csproj.GenerateResource.cache
+C:\Users\Valentino\Documents\GitHub\Seminario1.NET\Models\obj\Debug\Models.csprojAssemblyReference.cache

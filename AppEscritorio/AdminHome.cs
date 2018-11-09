@@ -48,5 +48,13 @@ namespace AppEscritorio
             this.Hide();
             p.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form2 rv = new Form2();
+
+            this.Hide();
+            rv.Show();
+        }
     }
 }

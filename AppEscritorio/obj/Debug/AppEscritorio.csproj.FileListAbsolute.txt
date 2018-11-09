@@ -137,9 +137,9 @@ C:\Users\Valentino\Documents\GitHub\Seminario1.NET\AppEscritorio\obj\Debug\AppEs
 C:\Users\Valentino\Documents\GitHub\Seminario1.NET\AppEscritorio\obj\Debug\AppEscritorio.Productos.resources
 C:\Users\Valentino\Documents\GitHub\Seminario1.NET\AppEscritorio\obj\Debug\AppEscritorio.Properties.Resources.resources
 C:\Users\Valentino\Documents\GitHub\Seminario1.NET\AppEscritorio\obj\Debug\AppEscritorio.ReportePedidos.resources
-C:\Users\Valentino\Documents\GitHub\Seminario1.NET\AppEscritorio\obj\Debug\AppEscritorio.ReporteVentas.resources
 C:\Users\Valentino\Documents\GitHub\Seminario1.NET\AppEscritorio\obj\Debug\AppEscritorio.csproj.GenerateResource.cache
 C:\Users\Valentino\Documents\GitHub\Seminario1.NET\AppEscritorio\obj\Debug\AppEscritorio.csproj.CoreCompileInputs.cache
 C:\Users\Valentino\Documents\GitHub\Seminario1.NET\AppEscritorio\obj\Debug\AppEscritorio.csproj.CopyComplete
 C:\Users\Valentino\Documents\GitHub\Seminario1.NET\AppEscritorio\obj\Debug\AppEscritorio.exe
 C:\Users\Valentino\Documents\GitHub\Seminario1.NET\AppEscritorio\obj\Debug\AppEscritorio.pdb
+C:\Users\Valentino\Documents\GitHub\Seminario1.NET\AppEscritorio\obj\Debug\AppEscritorio.Form2.resources

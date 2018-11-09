@@ -46,11 +46,12 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">Application name</a>
+                    <a class="navbar-brand" runat="server" href="~/">Mi Aplicación</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a runat="server" id="adminLink" visible="false" href="~/Admin">Admin</a></li>
+                        <li><a runat="server" href="~/ReportVentas.aspx" id="reportLink" visible="false">Reporte Ventas</a></li>
                         <li><a runat="server" href="~/">Home</a></li>
                         <li><a runat="server" href="~/ListaProductos">Productos</a></li>
                         <li><a runat="server" id="dashboard" visible="false" href="~/MisPedidos">Mis Pedidos</a></li>
@@ -81,7 +82,7 @@
                     <b style="font-size: large; font-style: normal">
                         <a href="ListaProductos.aspx?id=<%# Item.Id %>">
                             <%# Item.NombreCategoria %>
-                        </a>
+                        </a> |
                     </b>
                 </ItemTemplate>
             </asp:ListView>
