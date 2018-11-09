@@ -26,8 +26,9 @@ namespace AppEscritorio.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=VALENTINO-PC\\SQLEXPRESS;Initial Catalog=Models.DbContext;Integrated S" +
-            "ecurity=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Models.DbContext;Integrated Se" +
+            "curity=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;Applic" +
+            "ationIntent=ReadWrite;MultiSubnetFailover=False")]
         public string Models_DbContextConnectionString {
             get {
                 return ((string)(this["Models_DbContextConnectionString"]));

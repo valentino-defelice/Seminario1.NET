@@ -17,6 +17,10 @@ namespace Models
 
         [Required]
         public int UsuarioId { get; set; }
+        
+        public string UsuarioEmail { get; set; }
+
+        public decimal total { get; set; }
 
         public virtual Usuario Usuario { get; set; }
 

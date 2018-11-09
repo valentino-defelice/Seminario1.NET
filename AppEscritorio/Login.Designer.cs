@@ -108,7 +108,7 @@
             // 
             this.resultado.AutoSize = true;
             this.resultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.resultado.Location = new System.Drawing.Point(72, 212);
+            this.resultado.Location = new System.Drawing.Point(84, 219);
             this.resultado.Name = "resultado";
             this.resultado.Size = new System.Drawing.Size(0, 20);
             this.resultado.TabIndex = 6;

@@ -25,6 +25,7 @@ namespace Seminario1
                     adminLink.Visible = true;
                     dashboard.Visible = true;
                     vistaLogin.Visible = false;
+                    reportLink.Visible = true;
                 }
                 else if (!(Session["Usuario"] == null))
                 {
